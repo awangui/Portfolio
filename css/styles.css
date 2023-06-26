@@ -1,0 +1,58 @@
+body{
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color:#0a58ca;
+    
+}
+a:hover{
+    color:#0d6efd ;
+}
+.navigation{
+    display: flex;
+    padding:5px,0;
+    background-color: aliceblue;
+}
+.navigation ul li a{
+    padding: 20px;
+}
+.navigation .logo{
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 25%;
+    font-size:40px;
+    font-weight: 600;
+    font-family: 'Lavishly Yours','Passions Conflict','Birthstone Bounce', cursive;
+}
+.navigation ul{
+    display: inline-flex;
+    width: 75%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navigation ul li{
+   display: inline;
+}
+.services{
+    width:80%;
+    margin: 100px auto;
+}
+.service{
+    text-align: center;
+}
+.service h4{
+    color: #0a58ca;
+}
+.footer{
+    background-color:aliceblue;
+    color: #0a58ca;
+    padding: 30px;
+    text-align: left;
+}
+
+ul{
+    list-style: none;
+}
