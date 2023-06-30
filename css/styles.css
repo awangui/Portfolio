@@ -14,7 +14,7 @@ a:hover{
 .navigation{
     display: flex;
     padding:5px,0;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
 }
 .navigation ul li a{
     padding: 20px;
@@ -48,7 +48,7 @@ a:hover{
 }
 .footer{
     background-color:aliceblue;
-    color: #0a58ca;
+    color: #190B28;
     padding: 30px;
     text-align: left;
 }
