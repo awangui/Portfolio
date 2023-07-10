@@ -13,11 +13,13 @@ a:hover{
 }
 .navigation{
     display: flex;
-    padding:5px,0;
+    position: fixed;
+    width: 100%;
     background-color: #f0f8ff;
+    z-index: 2;
 }
 .navigation ul li a{
-    padding: 20px;
+    padding: 15px 20px;
 }
 .navigation .logo{
     display: inline-flex;
@@ -37,8 +39,9 @@ a:hover{
    display: inline;
 }
 .services{
-    width:80%;
     margin: 100px auto;
+    padding:5% 8%;
+    background-color: #f0f8ff57;
 }
 .service{
     text-align: center;
@@ -48,11 +51,74 @@ a:hover{
 }
 .footer{
     background-color:aliceblue;
-    color: #190B28;
+    color: #0a58ca;
     padding: 30px;
     text-align: left;
 }
 
 ul{
     list-style: none;
+}
+@media screen and (max-width:540px){
+    .navigation{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .navigation ul{
+        display: block;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .navigation ul li a{
+        padding: 8px;
+    }
+}
+.projects{
+    width: 80%;
+    margin: 0 auto;
+   
+}
+.number{   
+    font-size: 5vw; 
+    color: #0a58ca; 
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+}
+.proj-content{
+    padding:30px 0;
+    margin:20px 0;
+    line-height: 2;
+}
+.proj-title{
+    padding:1vh;
+}
+.link-btn{
+    border: solid 1px gray;
+    text-align: left;
+}
+form{
+    width:50%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding:50px;
+    border-radius: 4px;
+    box-shadow: inset;
+    
+}
+form h3, form p{
+    text-align: center;
+}
+
+.form-group{
+    padding: 20px 0;
+}
+form label{
+    color: #0a58ca;
+}
+.sendbtn{
+    text-align: center;
+    margin: auto 0;
 }
