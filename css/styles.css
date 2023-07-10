@@ -13,11 +13,12 @@ a:hover{
 }
 .navigation{
     display: flex;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     background-color: #f0f8ff;
     z-index: 2;
 }
+
 .navigation ul li a{
     padding: 15px 20px;
 }
@@ -38,6 +39,21 @@ a:hover{
 .navigation ul li{
    display: inline;
 }
+.ilustration img{
+    width:80%;
+    height: auto;
+}
+.intro-txt{
+    margin: auto auto;
+    padding-left: 5vw;
+}
+.intro-txt span{
+    color: #0d6efd;
+    font-size: 7vw;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.56;
+}
 .services{
     margin: 100px auto;
     padding:5% 8%;
@@ -50,7 +66,7 @@ a:hover{
     color: #0a58ca;
 }
 .footer{
-    background-color:aliceblue;
+    background-color:#f0f8ff;
     color: #0a58ca;
     padding: 30px;
     text-align: left;
@@ -77,7 +93,7 @@ ul{
 }
 .projects{
     width: 80%;
-    margin: 0 auto;
+    margin: 100px auto 0;
    
 }
 .number{   
@@ -117,8 +133,29 @@ form h3, form p{
 }
 form label{
     color: #0a58ca;
+    background-color: #fff;
 }
+
 .sendbtn{
     text-align: center;
     margin: auto 0;
 }
+.skillset h3, .skillset p{
+    text-align: center;
+}
+.skills{
+    display: flex;
+    padding: 20px auto;
+    margin: 20px 10%;
+    width:80%;
+}
+.skills span{
+    padding:20px;
+    background-color: #0d6dfd4c;
+    margin: 0 20px;
+    border-radius: 35px;
+    font-weight: 500;
+}
+.skills span:nth-child(odd) {
+    background: #0d6dfd75;
+  }
