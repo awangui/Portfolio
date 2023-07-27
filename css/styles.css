@@ -3,11 +3,14 @@ body{
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
+p{
+    font-size: 1.2rem;
+}
 a{
     text-decoration: none;
-    color:#0a58ca;
-    
+    color:#0a58ca;   
 }
+
 a:hover{
     color:#0d6efd ;
 }
@@ -22,7 +25,7 @@ a:hover{
 .navigation ul li a{
     padding: 15px 20px;
 }
-.navigation .logo{
+ .logo{
     display: inline-flex;
     justify-content: flex-start;
     width: 25%;
@@ -47,23 +50,30 @@ a:hover{
     margin: auto auto;
     padding-left: 5vw;
 }
-.intro-txt span{
-    color: #0d6efd;
+.name{
+    color: rgb(255, 227, 56);
     font-size: 7vw;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.56;
+    /* opacity: 0.56; */
+    font-family: 'Lavishly Yours','Passions Conflict','Birthstone Bounce', cursive;
+    padding-bottom: 2vh;
 }
 .services{
-    margin: 100px auto;
-    padding:5% 8%;
+    padding:1% 8%;
     background-color: #f0f8ff57;
 }
 .service{
     text-align: center;
+    padding-top: 100px;
+}
+.service i{
+   color: #ffe338;
+   font-size: 50px;
 }
 .service h4{
     color: #0a58ca;
+}
+.service p, .icon{
+    padding: 15px 0;
 }
 .footer{
     background-color:#f0f8ff;
@@ -94,8 +104,8 @@ ul{
 .projects{
     width: 80%;
     margin: 100px auto 0;
-   
 }
+
 .number{   
     font-size: 5vw; 
     color: #0a58ca; 
@@ -106,17 +116,22 @@ ul{
 .proj-content{
     padding:30px 0;
     margin:20px 0;
-    line-height: 2;
+    line-height: 1.75;
 }
 .proj-title{
     padding:1vh;
+}
+.proj-img img{
+    width: 70%;
+    height: auto;
+    margin-top:30%;
 }
 .link-btn{
     border: solid 1px gray;
     text-align: left;
 }
 form{
-    width:50%;
+    width:65%;
     margin: 0 auto;
     margin-bottom: 60px;
     padding:50px;
@@ -124,10 +139,31 @@ form{
     box-shadow: inset;
     
 }
+@media (max-width: 768px) {
+    form{
+        width:90%;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        padding:50px;
+        border-radius: 4px;
+        box-shadow: inset;
+        
+    }
+    .proj-img img{
+        width: 50%;
+        height: auto;
+        margin-top:30%;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+}
 form h3, form p{
     text-align: center;
 }
-
+input{
+    height: 50px;
+}
 .form-group{
     padding: 20px 0;
 }
@@ -139,23 +175,91 @@ form label{
 .sendbtn{
     text-align: center;
     margin: auto 0;
+    background-color: #0a58ca;
+    height: 50px;
+    width:20%;
+    border: solid 1px gray;
+    border-radius: 4px;
+    color: #f0f8ff;
 }
 .skillset h3, .skillset p{
     text-align: center;
 }
 .skills{
     display: flex;
-    padding: 20px auto;
+    flex-wrap: wrap;
     margin: 20px 10%;
     width:80%;
 }
 .skills span{
     padding:20px;
     background-color: #0d6dfd4c;
-    margin: 0 20px;
+    margin: 5px 20px;
     border-radius: 35px;
     font-weight: 500;
 }
 .skills span:nth-child(odd) {
     background: #0d6dfd75;
   }
+  /* @media (max-width: 700px) {
+    .skills {
+      flex-direction: column;
+    }
+  } */
+  /* Pre-loader CSS */
+.page-loader{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: #272727;
+    z-index: 1000;
+    .txt{
+        color: #666;
+        text-align: center;
+        top: 40%;
+        position: relative;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+}
+
+/* Spinner animation */
+.spinner {
+  position: relative;
+  top: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #0a58ca;
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+/*description*/
+.desc{
+    padding:5% 8%;
+}
+.title{
+    color:#0d6efd;
+}

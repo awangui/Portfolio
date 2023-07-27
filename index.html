@@ -14,8 +14,19 @@
       <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce&family=Lavishly+Yours&family=Passions+Conflict&display=swap" rel="stylesheet"> 
       <link rel="stylesheet" type="text/css" href="css/styles.css">
       <script src="https://kit.fontawesome.com/661ba5765b.js" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script>
+        function hideLoader(){
+          $('.page-loader').fadeOut('slow');
+        }
+        </script>
   </head>
   <div>
+    <div class="page-loader">
+        <div class="spinner"></div>
+        <div class="txt">Loading...</div>
+    </div>
+    <body onload="hideLoader()"></body>
     <div class="main">
         <div class="nav navigation">
             <div class="logo">
@@ -31,26 +42,38 @@
         </div>
         <div class="introduction row">
             <div class="intro-txt col-lg-6">
-                <span> Hi There!</span>
-                <h3 class="proj-title">Travel Agency website</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in tincidunt libero. Etiam eget orci at enim vestibulum pretium. Integer in varius elit, posuere sollicitudin nibh. </p>
+                <h3 class="greeting">Hi there! I'm</h3>
+                <h1 class="name"> Anita Wangui</h1>
+                    <p>a <span class="title">Data Analyst</span> and <span class="title"> Web Developer</span> with over 3+ years experience in creating visually appealing web applications.<br> </p>
             </div>
             <div class="ilustration col-lg-5">
                 <img src="./images/undraw_programmer_re_owql(2).svg">
             </div>
 
         </div>
+
+        <!-- end of introduction -->
+        <!-- description -->
+        <div class="desc">
+            <h2>Quick Summary</h2>          
+            <p>I am a certified Associate Data Analyst proficient in Python and  SQL to clean and analyze data to draw accurate conclusions and predictions. I am also skilled in utilizing tools such as Tableau, and Power BI to create data visualizations.<br>I also practice web development and have 3+ years experience in developing websites using languages like HTML/CSS and JavaScript.<br>I am also a fourth year Computer Science student at the Catholic University of Eastern Africa.        
+            </p>
+        </div>
+
+        <!-- end of description -->
+
         <div class="skillset">
+          
+            <p>I am skilled in the following</p>
             <h3>Technologies</h3>
-            
             <div class="skills">
-                <span>Python</span><span>HTML</span><span>CSS</span><span>SQL</span><span>Power BI</span><span>Bootstrap</span>
+                <span>Python</span><span>Django</span><span>SQL</span><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>Power BI</span><span>Tableau</span>
             </div>
-            <p>Are technologies I'm proficient in</p>
+            
         </div>
         <div class="projects row">
             <h1 style="text-align: center;"> My Projects</h1>
-            <div class="col-lg-6 proj-img">yess</div>
+            <div class="col-lg-6 proj-img"><img src="./images/undraw_analysis_dq08.svg"></div>
             <div class="col-lg-6 proj-content">
                 <span class="number">01</span>
                 <div class="proj-text">
@@ -68,8 +91,8 @@
                     <button class="btn link-btn"><a href="#">View website</a></button>
                 </div>
             </div>
-            <div class="col-lg-6 proj-img">yess</div>
-            <div class="col-lg-6 proj-img">yess</div>
+            <div class="col-lg-6 proj-img"><img src="./images/undraw_experience_design_re_dmqq.svg"></div>
+            <div class="col-lg-6 proj-img"><img src="./images/undraw_reminder_re_fe15.svg"></div>
             <div class="col-lg-6 proj-content">
                 <span class="number">03</span>
                 <div class="proj-text">
@@ -81,14 +104,18 @@
         </div>
         
             <div class="row services">
+                <h1 style="text-align: center;">What I do</h1>
                 <div class="col-sm-4  service">
-                    <h4>Web development</h4>
+                    <i class="fa-solid fa-globe icon"></i>
+                    <h4>Web Development</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in tincidunt libero. Etiam eget orci at enim vestibulum pretium. Integer in varius elit, posuere sollicitudin nibh. Aliquam varius augue id finibus auctor. Vestibulum ut metus at ipsum malesuada condimentum a ut leo. </p>
                 </div>
                 <div class="col-sm-4  service">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
                     <h4>Data Analysis</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in tincidunt libero. Etiam eget orci at enim vestibulum pretium. Integer in varius elit, posuere sollicitudin nibh. Aliquam varius augue id finibus auctor. Vestibulum ut metus at ipsum malesuada condimentum a ut leo. Donec gravida ligula non turpis molestie elementum. </p>
                 </div>
                 <div class="col-sm-4  service">
+                    <i class="fa-solid fa-chart-simple icon" ></i>
                     <h4>Data Visualization</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in tincidunt libero. Etiam eget orci at enim vestibulum pretium. Integer in varius elit, posuere sollicitudin nibh. Aliquam varius augue id finibus auctor. Vestibulum ut metus at ipsum malesuada condimentum a ut leo. Donec gravida ligula non turpis molestie elementum. </p>
                 </div>
             </div>
@@ -113,21 +140,25 @@
         </div>
     
             <div class="row footer">
-                <div class="col-lg-6">
+                <div class="col-lg-5">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in tincidunt libero. Etiam eget orci at enim vestibulum pretium. </p>
+                </div>
+                <div class="col-lg-4">
                     <ul>
                    <li>About</li>
                    <li>Skills</li>
                    <li>Projects</li>
                    </ul>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-3">
                     <ul>
-                    <li>Contact</li>
                     <li>Get in touch</li>
                     <span class="social"><i class="fa-brands fa-github"></i><a href="#"></a></span>
-                    <span class="social"><i class="fa-brands fa-linkedin"></i><a href="#"></a></span>  
+                    <span class="social"><i class="fa-brands fa-linkedin"><a href="https://github.com/awangui"></a></i></span>
+                    <li>Made with 🧡 by Wangui</li>
                     </ul>
                 </div>
+               
             </div>
 </div>
   </body>
