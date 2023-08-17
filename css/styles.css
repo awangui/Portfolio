@@ -1,10 +1,14 @@
+html {
+    scroll-behavior: smooth;
+  }
 body{
     list-style: none;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    /* background:rgb(24, 30, 39); */
 }
 p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 a{
     text-decoration: none;
@@ -42,11 +46,17 @@ a:hover{
 .navigation ul li{
    display: inline;
 }
+.nav-link i{
+  color: #054ebd;
+  font-size: 1.4rem;
+}
 .ilustration img{
     width:80%;
     height: auto;
 }
+
 .intro-txt{
+    display: block;
     margin: auto auto;
     padding-left: 5vw;
 }
@@ -58,12 +68,12 @@ a:hover{
     padding-bottom: 2vh;
 }
 .services{
-    padding:1% 8%;
+    padding:0 8%;
     background-color: #f0f8ff57;
 }
 .service{
     text-align: center;
-    padding-top: 100px;
+    padding: 50px 10px;
 }
 .service i{
    color: #ffe338;
@@ -100,6 +110,9 @@ ul{
     .navigation ul li a{
         padding: 8px;
     }
+    .nav-link i{
+     display: inline;
+    }
 }
 .projects{
     width: 80%;
@@ -122,7 +135,7 @@ ul{
     padding:1vh;
 }
 .proj-img img{
-    width: 70%;
+    width: 55%;
     height: auto;
     margin-top:30%;
 }
@@ -173,8 +186,6 @@ form label{
 }
 
 .sendbtn{
-    text-align: center;
-    margin: auto 0;
     background-color: #0a58ca;
     height: 50px;
     width:20%;
@@ -182,7 +193,7 @@ form label{
     border-radius: 4px;
     color: #f0f8ff;
 }
-.skillset h3, .skillset p{
+.skillset h1, .skillset p{
     text-align: center;
 }
 .skills{
@@ -197,9 +208,13 @@ form label{
     margin: 5px 20px;
     border-radius: 35px;
     font-weight: 500;
+    min-width:80px;
 }
 .skills span:nth-child(odd) {
     background: #0d6dfd75;
+  }
+ .text{
+    padding-left: 2.8rem;
   }
   /* @media (max-width: 700px) {
     .skills {
@@ -263,3 +278,81 @@ form label{
 .title{
     color:#0d6efd;
 }
+.intro-txt h3{
+    display: flex;
+}
+
+.typed{
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right: 2px solid;
+    animation: typing 3.0s steps(30, end) forwards, blinking 1s infinite
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blinking {
+    0% {border-right-color: transparent}
+    50% {border-right-color: black}
+    100% {border-right-color: transparent}
+  }
+  .fade-in{
+    position: relative;
+    transform: translateY(120px);
+    opacity: 0;
+    transition: 1.25s all ease;
+  }
+  
+  .fade-in.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .slide-in{
+    position: relative;
+    transform: translateX(-120px);
+    opacity: 0;
+    transition: 1.25s all ease;
+  }
+  .slide-in.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .right-slide-in{
+    position: relative;
+    transform: translateX(120px);
+    opacity: 0;
+    transition: 1.25s all ease;
+  }
+  .right-slide-in.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .intro-txt h1{
+    display: flex;
+  }
+  @keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+  .name{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3.0s steps(30, end) forwards;
+    animation-delay: 0.5s;
+  }
+  /* /* .name::after {
+    /*code commented for brevity*
+    content: "";
+    width: 5px;
+    height: 20px;
+    justify-content: center;
+    background: #000;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+} * */

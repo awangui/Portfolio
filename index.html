@@ -6,13 +6,21 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Portfolio</title>
+      <meta name="description" content="Anita Wangui's Portfolio. A display of Anita's projects, skills, certificates, education and much more...">
+      <meta name="keywords" content="anita, wangui, developer, kenya, data analyst, hire, nairobi">
+      <meta name="author" content="Anita Wangui">
+      <title>Anita Wangui</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce&family=Lavishly+Yours&family=Passions+Conflict&display=swap" rel="stylesheet"> 
       <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <script src="js/script.js"></script> 
       <script src="https://kit.fontawesome.com/661ba5765b.js" crossorigin="anonymous"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
       <script>
@@ -28,6 +36,7 @@
     </div>
     <body onload="hideLoader()"></body>
     <div class="main">
+        
         <div class="nav navigation">
             <div class="logo">
                 <a href="index.html">Wangui</a>
@@ -36,11 +45,11 @@
                 <li class="nav-item"><a class="nav-link" class="active" href="#Dashboard">Dashboard</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                <li class="nav-item"><i class="fa-brands fa-github"></i><a class="nav-link" href="#"></a></li>
-                <li class="nav-item"><i class="fa-brands fa-linkedin"></i><a class="nav-link"href="#"></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/awangui"><i class="fa-brands fa-github"></i></a></li>
+                <li class="nav-item"><a class="nav-link"href="https://ke.linkedin.com/in/anita-wangui-9868001b9"><i class="fa-brands fa-linkedin"></i></a></li>
               </ul>
         </div>
-        <div class="introduction row">
+        <div class="introduction row ">
             <div class="intro-txt col-lg-6">
                 <h3 class="greeting">Hi there! I'm</h3>
                 <h1 class="name"> Anita Wangui</h1>
@@ -53,28 +62,45 @@
         </div>
 
         <!-- end of introduction -->
+        
         <!-- description -->
         <div class="desc">
-            <h2>Quick Summary</h2>          
-            <p>I am a certified Associate Data Analyst proficient in Python and  SQL to clean and analyze data to draw accurate conclusions and predictions. I am also skilled in utilizing tools such as Tableau, and Power BI to create data visualizations.<br>I also practice web development and have 3+ years experience in developing websites using languages like HTML/CSS and JavaScript.<br>I am also a fourth year Computer Science student at the Catholic University of Eastern Africa.        
+            <h2 >Quick Summary</h2>          
+            <p>I am a certified Associate Data Analyst proficient in Python and  SQL to clean and analyze data to draw accurate conclusions and predictions. I am also skilled in utilizing tools such as Tableau, and Power BI to create data visualizations.<br>I also practice web development and have 3+ years experience in developing websites using languages like HTML/CSS and JavaScript.<br>I am also a fourth year Computer Science student at the Catholic University of Eastern Africa. I am experienced in machine learning, supervised and unsupervised algorithms and use data visualization techniques to present the results      
             </p>
         </div>
 
         <!-- end of description -->
 
-        <div class="skillset">
-          
-            <p>I am skilled in the following</p>
-            <h3>Technologies</h3>
+        <div class="skillset fade-in">      
+           <h1 >Technologies</h1>
+            <p>I am skilled in</p>
             <div class="skills">
                 <span>Python</span><span>Django</span><span>SQL</span><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>Power BI</span><span>Tableau</span>
             </div>
             
         </div>
-        <div class="projects row">
+        <h1 class="fade-in" style="text-align: center;">What I do</h1>
+        <div class="row services">
+            <div class="col-sm-4  service slide-in">
+                <i class="fa-solid fa-globe icon"></i>
+                <h4>Web Development</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in tincidunt libero. Etiam eget orci at enim vestibulum pretium. Integer in varius elit, posuere sollicitudin nibh. Aliquam varius augue id finibus auctor. Vestibulum ut metus at ipsum malesuada condimentum a ut leo. </p>
+            </div>
+            <div class="col-sm-4  service fade-in">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+                <h4>Data Analysis</h4><p>I am skilled in cleaning data and visualizing data in order to draw conclusions from it. Etiam eget orci at enim vestibulum pretium. Integer in varius elit, posuere sollicitudin nibh. Aliquam varius augue id finibus auctor. Vestibulum ut metus at ipsum malesuada condimentum a ut leo. Donec gravida ligula non turpis molestie elementum. </p>
+            </div>
+            <div class="col-sm-4  service right-slide-in">
+                <i class="fa-solid fa-chart-simple icon" ></i>
+                <h4>Data Visualization</h4><p>I translate data into valuable and comprehensible insights.Nulla in tincidunt libero. Etiam eget orci at enim vestibulum pretium. Integer in varius elit, posuere sollicitudin nibh. Aliquam varius augue id finibus auctor. Vestibulum ut metus at ipsum malesuada condimentum a ut leo. Donec gravida ligula non turpis molestie elementum. </p>
+            </div>
+        </div>
+       
+        <div class="projects row fade-in">
             <h1 style="text-align: center;"> My Projects</h1>
-            <div class="col-lg-6 proj-img"><img src="./images/undraw_analysis_dq08.svg"></div>
-            <div class="col-lg-6 proj-content">
+            <div class="col-lg-6 proj-img slide-in"><img src="./images/undraw_analysis_dq08.svg"></div>
+            <div class="col-lg-6 proj-content right-slide-in">
                 <span class="number">01</span>
                 <div class="proj-text">
                     <h3 class="proj-title">Travel Agency website</h3>
@@ -83,7 +109,7 @@
                 </div>
             </div>
           
-            <div class="col-lg-6 proj-content">
+            <div class="col-lg-6 proj-content slide-in">
                 <span class="number">02</span>
                 <div class="proj-text">
                     <h3 class="proj-title">Travel Agency website</h3>
@@ -91,9 +117,9 @@
                     <button class="btn link-btn"><a href="#">View website</a></button>
                 </div>
             </div>
-            <div class="col-lg-6 proj-img"><img src="./images/undraw_experience_design_re_dmqq.svg"></div>
-            <div class="col-lg-6 proj-img"><img src="./images/undraw_reminder_re_fe15.svg"></div>
-            <div class="col-lg-6 proj-content">
+            <div class="col-lg-6 proj-img right-slide-in" ><img src="./images/undraw_experience_design_re_dmqq.svg"></div>
+            <div class="col-lg-6 proj-img slide-in"><img src="./images/undraw_reminder_re_fe15.svg"></div>
+            <div class="col-lg-6 proj-content right-slide-in">
                 <span class="number">03</span>
                 <div class="proj-text">
                     <h3 class="proj-title">Study Easy</h3>
@@ -103,24 +129,7 @@
             </div>
         </div>
         
-            <div class="row services">
-                <h1 style="text-align: center;">What I do</h1>
-                <div class="col-sm-4  service">
-                    <i class="fa-solid fa-globe icon"></i>
-                    <h4>Web Development</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in tincidunt libero. Etiam eget orci at enim vestibulum pretium. Integer in varius elit, posuere sollicitudin nibh. Aliquam varius augue id finibus auctor. Vestibulum ut metus at ipsum malesuada condimentum a ut leo. </p>
-                </div>
-                <div class="col-sm-4  service">
-                    <i class="fa-solid fa-magnifying-glass icon"></i>
-                    <h4>Data Analysis</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in tincidunt libero. Etiam eget orci at enim vestibulum pretium. Integer in varius elit, posuere sollicitudin nibh. Aliquam varius augue id finibus auctor. Vestibulum ut metus at ipsum malesuada condimentum a ut leo. Donec gravida ligula non turpis molestie elementum. </p>
-                </div>
-                <div class="col-sm-4  service">
-                    <i class="fa-solid fa-chart-simple icon" ></i>
-                    <h4>Data Visualization</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in tincidunt libero. Etiam eget orci at enim vestibulum pretium. Integer in varius elit, posuere sollicitudin nibh. Aliquam varius augue id finibus auctor. Vestibulum ut metus at ipsum malesuada condimentum a ut leo. Donec gravida ligula non turpis molestie elementum. </p>
-                </div>
-            </div>
-           
-        <div class="contact">
+        <div class="contact fade-in">
             <form>
                 <h3> Let's connect!</h3>
                 <p>Get in touch with me</p>
@@ -140,8 +149,8 @@
         </div>
     
             <div class="row footer">
-                <div class="col-lg-5">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in tincidunt libero. Etiam eget orci at enim vestibulum pretium. </p>
+                <div class="col-lg-5 text">
+                    <p></p>Exceptional tech-savvy developer with 5+ years of professional experience developing intuitively designed, secure and responsive website for client </p>
                 </div>
                 <div class="col-lg-4">
                     <ul>
